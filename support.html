@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wired - Support</title>
+<meta name="description" content="Support and help for Wired, a gentle habit tracker.">
+<meta name="color-scheme" content="light only">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme:light;
+    --cream:#F5F1EA;
+    --paper:#FBF8F3;
+    --amber:#D4A574;
+    --amber-deep:#C2925E;
+    --sage:#A4BFA4;
+    --ink:#2A2D3A;
+    --ink-soft:rgba(42,45,58,.70);
+    --ink-mute:rgba(42,45,58,.46);
+    --line:rgba(42,45,58,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;background:#F5F1EA;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Fraunces',Georgia,serif;
+    font-weight:380;
+    line-height:1.65;
+    font-size:18px;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    position:relative;
+  }
+  /* soft grain for warmth */
+  body::before{
+    content:"";
+    position:fixed;inset:0;pointer-events:none;z-index:0;
+    opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{
+    position:relative;z-index:1;
+    max-width:640px;
+    margin:0 auto;
+    padding:84px 28px 64px;
+  }
+  .mark{
+    font-style:italic;
+    font-size:20px;
+    color:var(--ink);
+    letter-spacing:-.01em;
+  }
+  .mark .dot{color:var(--amber-deep);}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--ink-mute);
+    margin-top:64px;
+  }
+  h1{
+    font-weight:340;
+    font-size:clamp(44px,11vw,64px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    margin-top:14px;
+  }
+  h1 em{font-style:italic;color:var(--amber-deep);}
+  .lede{
+    color:var(--ink-soft);
+    font-size:19px;
+    margin-top:20px;
+    max-width:30em;
+  }
+  .rule{
+    height:1px;background:var(--line);
+    margin:48px 0;
+  }
+  h2{
+    font-weight:360;
+    font-size:26px;
+    letter-spacing:-.01em;
+    margin-bottom:8px;
+  }
+  p{color:var(--ink-soft);}
+  a{color:var(--amber-deep);text-decoration:none;border-bottom:1px solid rgba(194,146,94,.35);transition:border-color .2s;}
+  a:hover{border-color:var(--amber-deep);}
+  .mailbtn{
+    display:inline-block;
+    margin-top:22px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:15px;
+    letter-spacing:.01em;
+    color:var(--ink);
+    background:var(--amber);
+    border:none;
+    border-radius:999px;
+    padding:15px 28px;
+    transition:transform .15s ease, background .2s ease;
+  }
+  .mailbtn:hover{background:var(--amber-deep);color:#fff;transform:translateY(-1px);}
+  .reply{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--ink-mute);
+    letter-spacing:.02em;
+    margin-top:16px;
+  }
+  .faq{margin-top:8px;}
+  .qa{
+    border-top:1px solid var(--line);
+    padding:22px 0;
+  }
+  .qa:last-child{border-bottom:1px solid var(--line);}
+  .q{
+    font-weight:420;
+    font-size:19px;
+    color:var(--ink);
+  }
+  .a{margin-top:6px;color:var(--ink-soft);font-size:17px;}
+  footer{
+    margin-top:56px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:.05em;
+    color:var(--ink-mute);
+    line-height:1.9;
+  }
+  footer a{color:var(--ink-mute);border-bottom-color:rgba(42,45,58,.2);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="mark">wired<span class="dot">.</span></div>
+
+    <div class="eyebrow">help &amp; support</div>
+    <h1>here to <em>help</em>.</h1>
+    <p class="lede">wired is a gentle habit tracker, built for the way ADHD brains work - calm, low-pressure, and private. if something's not working or you have a question, reach out anytime.</p>
+
+    <div class="rule"></div>
+
+    <h2>get in touch</h2>
+    <p>have a question, found a bug, or just want to say hi? send an email and we'll get back to you.</p>
+    <a class="mailbtn" href="mailto:support.wired.app@gmail.com">support.wired.app@gmail.com</a>
+    <p class="reply">we usually reply within a couple of days.</p>
+
+    <div class="rule"></div>
+
+    <h2>a few quick answers</h2>
+    <div class="faq">
+      <div class="qa">
+        <div class="q">is wired free?</div>
+        <div class="a">yes, completely. no subscriptions, no paywalls, no locked features.</div>
+      </div>
+      <div class="qa">
+        <div class="q">is my data private?</div>
+        <div class="a">yes. everything stays on your device. nothing is collected, sent, or shared. you can also lock the app with Face ID.</div>
+      </div>
+      <div class="qa">
+        <div class="q">how do i add a habit?</div>
+        <div class="a">tap the plus on the today screen, give it a name and an emoji, choose how often you'd like to do it, and you're set. stuck? tap a quick idea and go.</div>
+      </div>
+      <div class="qa">
+        <div class="q">i missed a few days - did i lose my progress?</div>
+        <div class="a">no. wired has no streaks to break and no guilt. just pick things back up whenever you're ready.</div>
+      </div>
+      <div class="qa">
+        <div class="q">how do i reset everything?</div>
+        <div class="a">open settings and choose reset. it clears your habits and data from the device.</div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://chakki1l.github.io/wired-privacy/privacy.html">privacy policy</a><br>
+      &copy; 2026 Mykyta Duliesov - wired
+    </footer>
+
+  </div>
+</body>
+</html>
