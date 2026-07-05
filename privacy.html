@@ -1,72 +1,101 @@
----
-meta-color-scheme: light only
-meta-description: Privacy policy for Wired, a gentle habit tracker. Your data stays on your device.
-meta-viewport: width=device-width, initial-scale=1.0
-title: Wired - Privacy Policy
----
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="description" content="Privacy policy for Wired, a gentle habit tracker. Your data stays on your device.">
+<title>Wired - Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F7F0E2; --card:#FCF8EF; --ink:#36291B; --muted:#7A6A56;
+    --amber:#C1924E; --amber-deep:#A9793A; --line:rgba(54,41,27,.12);
+    --serif:'Lora', Georgia, serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans);
+    line-height:1.7; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px; margin:0 auto; padding:clamp(2.5rem,6vw,4.5rem) 1.5rem clamp(3rem,6vw,5rem)}
+  .brand{font-family:var(--serif); font-style:italic; font-weight:600; font-size:1.4rem; color:var(--ink)}
+  .eyebrow{font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--amber-deep);
+    font-weight:600; margin:.4rem 0 1.6rem}
+  h1{font-family:var(--serif); font-style:italic; font-weight:600; font-size:clamp(1.9rem,5vw,2.7rem);
+    line-height:1.1; letter-spacing:-.01em; margin:0 0 .5rem}
+  h1 em{font-style:italic}
+  .updated{color:var(--muted); font-size:.92rem; margin:0 0 2.2rem}
+  h2{font-family:var(--serif); font-style:italic; font-weight:600; font-size:1.35rem;
+    margin:2.4rem 0 .7rem; color:var(--ink)}
+  p{margin:0 0 1rem; color:#4a3d2c}
+  ul{margin:0 0 1.2rem; padding-left:1.2rem}
+  li{margin:.35rem 0; color:#4a3d2c}
+  a{color:var(--amber-deep); text-decoration:underline; text-underline-offset:2px}
+  .lead{font-size:1.08rem}
+  .divider{height:1px; background:var(--line); border:0; margin:2.4rem 0}
+  footer{margin-top:2.8rem; padding-top:1.6rem; border-top:1px solid var(--line);
+    color:var(--muted); font-size:.9rem}
+  footer a{margin-right:1rem}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">wired</div>
+    <p class="eyebrow">privacy policy</p>
 
-wired
+    <h1>your data stays <em>yours</em></h1>
+    <p class="updated">last updated july 5, 2026</p>
 
-privacy policy
+    <p class="lead">Wired does not collect, track, or share your data. Everything stays on your device, or, if you choose to turn on iCloud sync, in your own private iCloud. We run no servers of our own, and we cannot see anything you do in the app.</p>
 
-# your data stays *yours*
+    <h2>what wired stores</h2>
+    <p>Wired stores the following information locally on your device:</p>
+    <ul>
+      <li>Habits you create (name, emoji, time of day, frequency, completion history)</li>
+      <li>One-day tasks (title, emoji, date, and whether they're done)</li>
+      <li>Brain dump notes (quick thoughts you jot down)</li>
+      <li>Day notes and weekly mood check-ins (how a day felt, plus any short note you add)</li>
+      <li>Rewards you add (name, category)</li>
+      <li>Your app preferences (theme, language, app icon, sound and app-lock settings)</li>
+    </ul>
+    <p>This data is stored using Apple's SwiftData framework in your app's private container. We do not have access to it.</p>
 
-last updated july 5, 2026
+    <h2>the home-screen widget</h2>
+    <p>Wired's widget shows your tasks and habits on your home screen. It reads them from the same private, on-device storage through a private app group shared only between Wired and its own widget. Nothing is sent anywhere.</p>
 
-Wired does not collect, track, or share your data. Everything stays on your device, or, if you choose to turn on iCloud sync, in your own private iCloud. We run no servers of our own, and we cannot see anything you do in the app.
+    <h2>icloud sync (optional)</h2>
+    <p>If you turn on iCloud sync, your data is synced through your own private iCloud account, managed by Apple, so it can appear on your other devices. It goes to your iCloud, never to us, and we still cannot see it. Sync is off by default; while it is off, your data never leaves your device. You can turn it off again at any time in Settings.</p>
 
-## what wired stores
+    <h2>analytics &amp; tracking</h2>
+    <p>Wired does not use analytics, tracking SDKs, advertising networks, or any third-party data collection. Apart from the optional iCloud sync above, the app makes no network requests of its own during normal use. Links you tap (the App Store, email, this policy) simply open in the relevant app.</p>
 
-Wired stores the following information locally on your device:
+    <h2>notifications</h2>
+    <p>If you enable notifications, Wired schedules local reminders for your habits. These notifications are generated entirely on your device.</p>
 
-- Habits you create (name, emoji, time of day, frequency, completion history)
-- One-day tasks (title, emoji, date, and whether they're done)
-- Brain dump notes (quick thoughts you jot down)
-- Day notes and weekly mood check-ins (how a day felt, plus any short note you add)
-- Rewards you add (name, category)
-- Your app preferences (theme, language, app icon, sound and app-lock settings)
+    <h2>app lock &amp; face id</h2>
+    <p>If you enable App Lock, Wired uses iOS's LocalAuthentication framework to verify your identity. Face ID, Touch ID, and passcode data are managed by iOS and never accessible to Wired.</p>
 
-This data is stored using Apple's SwiftData framework in your app's private container. We do not have access to it.
+    <h2>children</h2>
+    <p>Wired is intended for users 13 years of age and older.</p>
 
-## the home-screen widget
+    <h2>crisis &amp; mental-health resources</h2>
+    <p>Wired includes a Resources section with crisis support links. These are external services not affiliated with Wired.</p>
 
-Wired's widget shows your tasks and habits on your home screen. It reads them from the same private, on-device storage through a private app group shared only between Wired and its own widget. Nothing is sent anywhere.
+    <h2>your rights</h2>
+    <p>You can delete all your data at any time through Settings, Data, Delete all data. This removes everything Wired has stored, including habits, tasks, notes, and brain dumps. You can also export your data as JSON through Settings, Data, Export my data.</p>
 
-## icloud sync (optional)
+    <h2>contact</h2>
+    <p>If you have questions about this privacy policy, contact <a href="mailto:support.wired.app@gmail.com">support.wired.app@gmail.com</a>.</p>
 
-If you turn on iCloud sync, your data is synced through your own private iCloud account, managed by Apple, so it can appear on your other devices. It goes to your iCloud, never to us, and we still cannot see it. Sync is off by default; while it is off, your data never leaves your device. You can turn it off again at any time in Settings.
+    <h2>disclaimer</h2>
+    <p>Wired is not a medical app and does not replace professional treatment for ADHD, anxiety, eating disorders, or any other condition. If you are struggling, please contact a healthcare professional.</p>
 
-## analytics & tracking
-
-Wired does not use analytics, tracking SDKs, advertising networks, or any third-party data collection. Apart from the optional iCloud sync above, the app makes no network requests of its own during normal use. Links you tap (the App Store, email, this policy) simply open in the relevant app.
-
-## notifications
-
-If you enable notifications, Wired schedules local reminders for your habits. These notifications are generated entirely on your device.
-
-## app lock & face id
-
-If you enable App Lock, Wired uses iOS's LocalAuthentication framework to verify your identity. Face ID, Touch ID, and passcode data are managed by iOS and never accessible to Wired.
-
-## children
-
-Wired is intended for users 13 years of age and older.
-
-## crisis & mental-health resources
-
-Wired includes a Resources section with crisis support links. These are external services not affiliated with Wired.
-
-## your rights
-
-You can delete all your data at any time through Settings → Data → Delete all data. This removes everything Wired has stored, including habits, tasks, notes, and brain dumps. You can also export your data as JSON through Settings → Data → Export my data.
-
-## contact
-
-If you have questions about this privacy policy, contact <support.wired.app@gmail.com>.
-
-## disclaimer
-
-Wired is not a medical app and does not replace professional treatment for ADHD, anxiety, eating disorders, or any other condition. If you are struggling, please contact a healthcare professional.
-
-[support](https://chakki1l.github.io/wired-privacy/support.html)  
-© 2026 Mykyta Duliesov
+    <footer>
+      <a href="https://chakki1l.github.io/wired-privacy/support.html">support</a>
+      <span>© 2026 Mykyta Duliesov</span>
+    </footer>
+  </div>
+</body>
+</html>
